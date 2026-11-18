@@ -23,6 +23,7 @@ The inequality is to be proved for every unit vector \(\psi\in\mathbb C^4\). Equ
 - [Mathematical foundations](docs/MATHEMATICAL-FOUNDATIONS.md)
 - [Verification ledger and caveats](docs/VERIFICATION.md)
 - [Research log](docs/RESEARCH-LOG.md)
+- [Detailed work archive and continuation record](docs/WORK-ARCHIVE.md)
 - [References](REFERENCES.md)
 
 ## Proof-status policy
