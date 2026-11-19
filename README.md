@@ -28,6 +28,19 @@ The inequality is to be proved for every unit vector \\(\\psi\\in\\mathbb C^4\\)
 - [Detailed work archive and continuation record](docs/WORK-ARCHIVE.md)
 - [References](REFERENCES.md)
 
+## Exact verification package
+
+- [Verification instructions and evidence status](VERIFICATION-RESULTS.md)
+- [Exact MUB and Pauli data](mub_data.py)
+- [MUB unitarity and mutual-unbiasedness checks](verify_mub.py)
+- [Equality-state checks](verify_equality.py)
+- [Pauli state-orbit checks](verify_pauli_orbit.py)
+- [Python dependencies](requirements.txt)
+
+Run the commands in VERIFICATION-RESULTS.md from the repository root. The
+scripts are committed, but their execution logs have not yet been captured.
+The state-orbit script is not a full basis-action certificate.
+
 ## Proof-status policy
 
 Every result must be labeled as one of:
