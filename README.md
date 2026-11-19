@@ -1,21 +1,23 @@
 # Five-MUB Entropy Bound
 
+**Full research title:** *The Global Shannon-Entropy Problem for Complete Sets of Five Mutually Unbiased Bases in Dimension Four*
+
 Research project on the tight Shannon entropic uncertainty relation for a complete set of five mutually unbiased bases (MUBs) in dimension four.
 
 > **Research status: IN PROGRESS.** The target inequality and equality examples are known in the literature. This repository investigates a rigorous global proof and the equality structure. It does **not** currently claim that a new global proof or a complete equality classification has been established.
 
 ## Target
 
-For five orthonormal bases \(B_0,\ldots,B_4\) in \(\mathbb C^4\) that are pairwise mutually unbiased, let
-\[
-p_{j,a}=|\langle b_{j,a}|\psi\rangle|^2,\qquad
-H(B_j)_\psi=-\sum_{a=0}^3p_{j,a}\log_2p_{j,a}.
-\]
+For five orthonormal bases \\(B_0,\\ldots,B_4\\) in \\(\\mathbb C^4\\) that are pairwise mutually unbiased, let
+\\[
+p_{j,a}=|\\langle b_{j,a}|\\psi\\rangle|^2,\\qquad
+H(B_j)_\\psi=-\\sum_{a=0}^3p_{j,a}\\log_2p_{j,a}.
+\\]
 The target is
-\[
-\boxed{\sum_{j=0}^4H(B_j)_\psi\ge 7\text{ bits}.}
-\]
-The inequality is to be proved for every unit vector \(\psi\in\mathbb C^4\). Equality examples are known.
+\\[
+\\boxed{\\sum_{j=0}^4H(B_j)_\\psi\\ge 7\\text{ bits}.}
+\\]
+The inequality is to be proved for every unit vector \\(\\psi\\in\\mathbb C^4\\). Equality examples are known.
 
 ## Repository map
 
