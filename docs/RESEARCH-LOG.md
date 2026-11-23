@@ -119,3 +119,8 @@ Added a mathematical note proving that if a unitary U maps each basis matrix to 
 ## 2026-11-23 continuation — Abstract finite-orbit domain coverage
 
 Clarified the earlier caution about symmetry reduction. If a finite group action is exactly certified and \(F\) is invariant, an abstract covering domain is obtained by selecting the lexicographically minimal canonical ray representative from each orbit. This proves every orbit meets the domain because each finite orbit has a minimum. The caveat is important: this abstract domain is not necessarily an explicit, convenient, closed, or computationally useful region. It does not prove the target inequality or make the concrete Pauli reduction verified; the matrix certificate is still unexecuted.
+
+
+## 2026-11-23 continuation — Quantifying symmetry-reduction leverage
+
+The two-qubit Pauli group modulo global phase has 16 elements. Once certified entropy-preserving, its orbit sizes are at most 16. Generic rays have trivial stabilizer and full orbit size 16: the fixed-ray/eigenspace set for each nonidentity Pauli is proper, and a finite union of such proper sets cannot cover \(\mathbb{CP}^3\). Thus the symmetry can remove at most a discrete factor of 16 and does not reduce the continuous six-real-dimensional optimization. This narrows the role of the symmetry route: use it for orbit bookkeeping and equality-orbit structure, not as the primary global inequality engine.
