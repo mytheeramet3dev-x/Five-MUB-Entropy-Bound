@@ -95,3 +95,12 @@ This is a design proposal only. No global interval proof has been run.
 **Evidence status:** all edits were fetched back from GitHub. Neither generator nor checker was run in this session; therefore no 80-action pass or symmetry result is claimed. Both verifier paths use `mub_data.py`, so this is independent checking of the generated action records, not an independent audit of the underlying MUB data.
 
 **Next:** (1) audit the source matrices and Pauli labels independently; (2) once execution access is available, run generator and checker and archive the JSON/log/software versions; (3) analyze certified basis/column permutations for the entropy function's symmetry reduction; (4) do not use symmetry reduction in a global proof until its exact scope is verified.
+
+
+## 2026-11-23 continuation — MUB/Pauli source audit artifact
+
+Added `audit_mub_source.py` to recheck five basis unitarity, all ten MUB overlaps, exact Pauli enumeration against explicit tensor products using the `X^x Z^z` convention, distinctness modulo global phase, and the equality representative's exact five probability distributions. Added `docs/SOURCE-DATA-AUDIT.md` and README links.
+
+**Evidence status:** source files were fetched back from GitHub. The audit script is written but has not been executed; therefore no audit pass is claimed. This checkpoint improves reproducibility but does not establish the global entropy inequality.
+
+**Next:** inspect and strengthen the audit's independence and coverage, then run it when execution is permitted. Preserve its output and tool versions. Only after the source data is audited should the Pauli-action certificate be considered trustworthy evidence for symmetry reduction.
