@@ -349,3 +349,8 @@ All source edits were fetched back from GitHub. **Neither script was executed** 
 Added `audit_mub_source.py` and `docs/SOURCE-DATA-AUDIT.md`. The script checks five basis unitarities, all ten pairwise unbiasedness conditions, the 16 Pauli labels against explicit \\(X^xZ^z\\) tensor-product constructions, exact distinctness modulo global phase, and equality-state normalization/probabilities. README now links these artifacts.
 
 Fetched-back content confirmed. **Not executed:** no audit PASS result or numerical/symbolic execution claim. Next task is to preserve output/software versions when execution becomes available, then audit the Pauli action certificate.
+
+
+## 16. Strengthened source audit checkpoint (2026-11-23)
+
+Pauli checks now include exact Hilbert–Schmidt orthogonality \(\operatorname{Tr}(P_a^\dagger P_b)=4\delta_{ab}\), representative unitarity, tracelessness for nonidentity labels, and label uniqueness. Logic is written, not executed. Expected and production constructions share X/Z primitives.
