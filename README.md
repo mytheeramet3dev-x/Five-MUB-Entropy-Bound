@@ -35,7 +35,8 @@ The inequality is to be proved for every unit vector \\(\\psi\\in\\mathbb C^4\\)
 - [MUB unitarity and mutual-unbiasedness checks](verify_mub.py)
 - [Equality-state checks](verify_equality.py)
 - [Pauli state-orbit checks](verify_pauli_orbit.py)
-- [Exact Pauli basis-action certificate](verify_basis_action.py)
+- [Exact Pauli basis-action certificate generator](verify_basis_action.py)
+- [Certificate output format and evidence status](docs/PAULI-MUB-ACTION-CERTIFICATE.md)
 - [Python dependencies](requirements.txt)
 
 Run the commands in VERIFICATION-RESULTS.md from the repository root. The
