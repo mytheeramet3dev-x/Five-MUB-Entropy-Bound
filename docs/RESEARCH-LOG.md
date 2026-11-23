@@ -109,3 +109,8 @@ Added `audit_mub_source.py` to recheck five basis unitarity, all ten MUB overlap
 ## 2026-11-23 continuation — Strengthened Pauli source audit
 
 Replaced phase-distinctness comparisons with exact Hilbert–Schmidt orthogonality \(\operatorname{Tr}(P_a^\dagger P_b)=4\delta_{ab}\), plus representative unitarity, tracelessness for nonidentity labels, and label uniqueness. This directly tests malformed or duplicate representatives. Updated source audit, status, and README. The script is still not executed; no PASS is claimed. Expected and production constructions share X/Z primitives, so the convention cross-check is not independent from external reference data.
+
+
+## 2026-11-23 continuation — Conditional Pauli symmetry theorem
+
+Added a mathematical note proving that if a unitary U maps each basis matrix to another member of the five-basis set through a monomial unitary (basis permutation plus column permutation/phases), then measurement probability vectors are permuted and \(F(U\psi)=F(\psi)\). This theorem is proved algebraically and is independent of any computational run. Its concrete application to the repo's Pauli operators remains unverified until the exact action certificate is generated, checked, and archived. The note explicitly warns that orbit invariance alone does not justify restricting to a fundamental domain without a coverage argument, and does not prove the target lower bound or equality classification.
