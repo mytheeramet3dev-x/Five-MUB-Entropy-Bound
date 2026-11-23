@@ -41,8 +41,11 @@ The generator checks:
 **SCRIPT WRITTEN; NOT EXECUTED IN THIS environment.** No JSON output file,
 80-record pass claim, or successful symmetry result is asserted yet.
 After running, preserve the generated JSON, command output, Python version,
-and SymPy version together. A generated certificate should be independently
-rechecked rather than accepted solely because the generator produced it.
+and SymPy version together. The independent checker
+`verify_basis_action_certificate.py` recomputes each overlap and checks the
+stored target, permutation, and exact phases against the source matrices. It
+is a second verification path, but both scripts still share `mub_data.py`;
+that common input is not independently audited by this checker.
 
 ## Reproduction
 
@@ -51,6 +54,7 @@ From the repository root:
 ```bash
 python -m pip install -r requirements.txt
 python verify_basis_action.py
+python verify_basis_action_certificate.py
 ```
 
 The output JSON is generated in the current working directory.
