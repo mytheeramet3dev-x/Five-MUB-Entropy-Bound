@@ -57,3 +57,8 @@ The project is not complete until:
 ## 2026-11-23 — Finite-group domain coverage clarification
 
 Conditional on exact verification of a finite symmetry group \(G\), a fundamental-domain coverage argument exists abstractly: canonicalize each ray's global phase, order its real coordinates lexicographically, and choose the lexicographically minimal member of each finite orbit. Every orbit has a minimum, so the domain covers projective space modulo \(G\). This is only an abstract coverage theorem; it is not a useful explicit domain or a computational reduction yet. The Pauli action certificate remains unexecuted, and the global inequality remains unproved.
+
+
+## 2026-11-23 — Finite-group domain coverage clarification
+
+Conditional on exact verification of a finite symmetry group \(G\), an abstract coverage argument is available: canonicalize ray phase, order its six real coordinates lexicographically, and select the lexicographically minimal member of each finite orbit. Every orbit has a minimum, so the domain covers projective space modulo \(G\). This is only an abstract coverage theorem, not an explicit convenient domain or computational reduction. The Pauli action certificate remains unexecuted; the global inequality remains unproved.
