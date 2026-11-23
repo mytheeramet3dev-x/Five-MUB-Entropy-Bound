@@ -69,3 +69,6 @@ All matrices, conventions, scripts, exact outputs, software versions, and proof 
 Source audit also checks exact Pauli Hilbert–Schmidt orthogonality, representative unitarity, nonidentity tracelessness, and unique labels (script not yet run).
 
 - [Pauli symmetry and entropy invariance theorem](docs/PAULI-SYMMETRY-REDUCTION.md)
+
+
+**Symmetry-domain note:** conditional on a certified finite entropy-preserving group, an abstract orbit-covering domain can be defined by selecting the lexicographically minimal canonical ray in each orbit. This guarantees coverage but is not yet an explicit useful search region; the concrete Pauli action certificate remains unexecuted.
