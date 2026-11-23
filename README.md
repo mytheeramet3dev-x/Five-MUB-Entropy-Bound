@@ -32,6 +32,8 @@ The inequality is to be proved for every unit vector \\(\\psi\\in\\mathbb C^4\\)
 
 - [Verification instructions and evidence status](VERIFICATION-RESULTS.md)
 - [Exact MUB and Pauli data](mub_data.py)
+- [Independent source-data audit script](audit_mub_source.py)
+- [Source-data audit scope and evidence status](docs/SOURCE-DATA-AUDIT.md)
 - [MUB unitarity and mutual-unbiasedness checks](verify_mub.py)
 - [Equality-state checks](verify_equality.py)
 - [Pauli state-orbit checks](verify_pauli_orbit.py)
