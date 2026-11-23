@@ -104,3 +104,8 @@ Added `audit_mub_source.py` to recheck five basis unitarity, all ten MUB overlap
 **Evidence status:** source files were fetched back from GitHub. The audit script is written but has not been executed; therefore no audit pass is claimed. This checkpoint improves reproducibility but does not establish the global entropy inequality.
 
 **Next:** inspect and strengthen the audit's independence and coverage, then run it when execution is permitted. Preserve its output and tool versions. Only after the source data is audited should the Pauli-action certificate be considered trustworthy evidence for symmetry reduction.
+
+
+## 2026-11-23 continuation — Strengthened Pauli source audit
+
+Replaced phase-distinctness comparisons with exact Hilbert–Schmidt orthogonality \(\operatorname{Tr}(P_a^\dagger P_b)=4\delta_{ab}\), plus representative unitarity, tracelessness for nonidentity labels, and label uniqueness. This directly tests malformed or duplicate representatives. Updated source audit, status, and README. The script is still not executed; no PASS is claimed. Expected and production constructions share X/Z primitives, so the convention cross-check is not independent from external reference data.
