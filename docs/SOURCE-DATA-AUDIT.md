@@ -4,8 +4,7 @@
 `audit_mub_source.py` independently repeats the exact algebraic checks for the
 five basis matrices and audits the Pauli label convention used by
 `pauli_operators()`. It compares the yielded operators against an explicit
-construction using tensor products of \\(X^x Z^z\\), checks exact distinctness
-modulo global phase, and confirms the equality-state probabilities.
+construction using tensor products of \\(X^x Z^z\\), checks exact Hilbert–Schmidt orthogonality and normalization of the Pauli representatives (stronger than distinctness modulo phase), and confirms the equality-state probabilities.
 
 ## Check list
 - Five 4x4 basis matrices are unitary.
@@ -21,3 +20,7 @@ modulo global phase, and confirms the equality-state probabilities.
 reproducible. It has not produced a pass log in the current environment.
 The source matrices and audit code are fetched back from GitHub after commit.
 A successful future run must preserve output, Python version, and SymPy version.
+
+## Strengthening checkpoint — Pauli orthogonality
+
+The audit now checks the exact Hilbert–Schmidt relations \(\operatorname{Tr}(P_a^\dagger P_b)=4\delta_{ab}\), exact unitarity, trace zero for every nonidentity label, and label uniqueness. This catches duplicate or malformed representatives directly. Checks are written but not executed. Expected and production constructions share the X/Z primitives; this is not an external source derivation.
