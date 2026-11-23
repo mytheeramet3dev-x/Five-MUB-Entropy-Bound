@@ -114,3 +114,8 @@ Replaced phase-distinctness comparisons with exact Hilbert–Schmidt orthogonali
 ## 2026-11-23 continuation — Conditional Pauli symmetry theorem
 
 Added a mathematical note proving that if a unitary U maps each basis matrix to another member of the five-basis set through a monomial unitary (basis permutation plus column permutation/phases), then measurement probability vectors are permuted and \(F(U\psi)=F(\psi)\). This theorem is proved algebraically and is independent of any computational run. Its concrete application to the repo's Pauli operators remains unverified until the exact action certificate is generated, checked, and archived. The note explicitly warns that orbit invariance alone does not justify restricting to a fundamental domain without a coverage argument, and does not prove the target lower bound or equality classification.
+
+
+## 2026-11-23 continuation — Abstract finite-orbit domain coverage
+
+Clarified the earlier caution about symmetry reduction. If a finite group action is exactly certified and \(F\) is invariant, an abstract covering domain is obtained by selecting the lexicographically minimal canonical ray representative from each orbit. This proves every orbit meets the domain because each finite orbit has a minimum. The caveat is important: this abstract domain is not necessarily an explicit, convenient, closed, or computationally useful region. It does not prove the target inequality or make the concrete Pauli reduction verified; the matrix certificate is still unexecuted.
