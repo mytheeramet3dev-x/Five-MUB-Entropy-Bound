@@ -359,3 +359,8 @@ Pauli checks now include exact Hilbert–Schmidt orthogonality \(\operatorname{T
 ## 17. Conditional entropy-symmetry theorem (2026-11-23)
 
 A note was added proving: if \(UB_j=B_{\pi(j)}M_j\) for a permutation \(\pi\) of the five basis indices and monomial unitaries \(M_j\), then the outcome probability vectors for \(U\psi\) are coordinate permutations of the original distributions and \(F(U\psi)=F(\psi)\). This is a conditional mathematical proof. Concrete Pauli actions still require exact certificate execution/checking. Orbit invariance does not alone supply a fundamental-domain covering or prove \(F\ge7\).
+
+
+## 18. Abstract fundamental-domain coverage clarification (2026-11-23)
+
+Conditional on a verified finite symmetry group \(G\), canonicalize each ray's global phase, choose a fixed ordered list of six real coordinates, and select the lexicographically least tuple among its finite orbit. Every orbit has a least member, so this defines a coverage domain meeting every orbit. This is abstract set-theoretic coverage only, not an explicit efficient domain. It cannot be applied to the concrete Pauli group until its exact basis action is certified and does not establish the entropy lower bound.
