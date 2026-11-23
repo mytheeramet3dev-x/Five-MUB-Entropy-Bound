@@ -364,3 +364,8 @@ A note was added proving: if \(UB_j=B_{\pi(j)}M_j\) for a permutation \(\pi\) of
 ## 18. Abstract fundamental-domain coverage clarification (2026-11-23)
 
 Conditional on a verified finite symmetry group \(G\), canonicalize each ray's global phase, choose a fixed ordered list of six real coordinates, and select the lexicographically least tuple among its finite orbit. Every orbit has a least member, so this defines a coverage domain meeting every orbit. This is abstract set-theoretic coverage only, not an explicit efficient domain. It cannot be applied to the concrete Pauli group until its exact basis action is certified and does not establish the entropy lower bound.
+
+
+## 19. Symmetry-reduction scale (2026-11-23)
+
+The two-qubit Pauli group modulo phase has 16 elements. A certified invariant objective therefore has orbits of size at most 16; generic rays have trivial stabilizer and full orbit size 16, since each nonidentity Pauli's fixed-ray set is proper and finitely many proper eigenspaces cannot cover the projective space. The symmetry removes only a discrete redundancy, not continuous dimension: projective state space remains six real dimensional. Treat this as a limited auxiliary tool, not the global proof engine.
