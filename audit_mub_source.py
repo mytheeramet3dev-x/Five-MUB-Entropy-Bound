@@ -45,12 +45,20 @@ def main():
     for label, matrix in expected_paulis.items():
         assert sp.simplify(yielded[label] - matrix) == sp.zeros(4)
         assert sp.simplify(matrix.conjugate().T * matrix - I4) == sp.zeros(4)
-    # Distinctness is checked exactly up to global phase.
+    # Check Pauli Hilbert-Schmidt orthogonality and normalization exactly.
+    # This directly catches duplicate representatives and malformed enumeration.
+    labels = list(yielded)
     matrices = list(yielded.values())
-    for a in range(16):
+    assert len(labels) == 16 and len(set(labels)) == 16
+    for a, A in enumerate(matrices):
+        assert A.shape == (4, 4)
+        assert sp.simplify(A.conjugate().T * A - I4) == sp.zeros(4)
+        assert sp.simplify(sp.trace(A.conjugate().T * A)) == 4
+        if labels[a] != "0000":
+            assert sp.simplify(sp.trace(A)) == 0
         for b in range(a + 1, 16):
-            overlap = sp.simplify(matrices[a].conjugate().T * matrices[b])
-            assert overlap != I4 and overlap != -I4 and overlap != sp.I * I4 and overlap != -sp.I * I4
+            B = matrices[b]
+            assert sp.simplify(sp.trace(A.conjugate().T * B)) == 0
 
     assert sp.simplify(PSI_STAR.conjugate().T * PSI_STAR)[0] == 1
     for j, B in enumerate(BASES):
