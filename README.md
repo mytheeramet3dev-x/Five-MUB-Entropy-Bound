@@ -67,3 +67,5 @@ Primary objective: establish the universal 7-bit lower bound with a rigorous glo
 All matrices, conventions, scripts, exact outputs, software versions, and proof artifacts should eventually be committed. At present, some matrix and equality-state checks are recorded as completed in the research notes, but the corresponding executable verification artifacts still need to be added.
 
 Source audit also checks exact Pauli Hilbert–Schmidt orthogonality, representative unitarity, nonidentity tracelessness, and unique labels (script not yet run).
+
+- [Pauli symmetry and entropy invariance theorem](docs/PAULI-SYMMETRY-REDUCTION.md)
