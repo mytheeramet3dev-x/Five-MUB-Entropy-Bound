@@ -62,3 +62,8 @@ Conditional on exact verification of a finite symmetry group \(G\), a fundamenta
 ## 2026-11-23 — Finite-group domain coverage clarification
 
 Conditional on exact verification of a finite symmetry group \(G\), an abstract coverage argument is available: canonicalize ray phase, order its six real coordinates lexicographically, and select the lexicographically minimal member of each finite orbit. Every orbit has a minimum, so the domain covers projective space modulo \(G\). This is only an abstract coverage theorem, not an explicit convenient domain or computational reduction. The Pauli action certificate remains unexecuted; the global inequality remains unproved.
+
+
+## Symmetry reduction scale
+
+Even if the full two-qubit Pauli action is certified, the group modulo global phase has only 16 elements. The generic ray orbit has size 16 (trivial stabilizer), so the discrete search reduction is at most a factor of 16; it does not reduce the six real dimensions of projective state space. Symmetry is a useful discrete redundancy control, not a standalone global proof strategy.
