@@ -15,7 +15,7 @@ def is_monomial_unitary(M):
         if sum(sp.simplify(M[r, c]) != 0 for c in range(n)) != 1:
             return False
     for c in range(n):
-        if sum(sp.simplify(M[r, c]) != 0 for r in range(n):
+        if sum(sp.simplify(M[r, c]) != 0 for r in range(n)) != 1:
             return False
     return sp.simplify(M.conjugate().T * M - sp.eye(n)) == sp.zeros(n)
 
