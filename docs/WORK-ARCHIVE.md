@@ -354,3 +354,8 @@ Fetched-back content confirmed. **Not executed:** no audit PASS result or numeri
 ## 16. Strengthened source audit checkpoint (2026-11-23)
 
 Pauli checks now include exact Hilbert–Schmidt orthogonality \(\operatorname{Tr}(P_a^\dagger P_b)=4\delta_{ab}\), representative unitarity, tracelessness for nonidentity labels, and label uniqueness. Logic is written, not executed. Expected and production constructions share X/Z primitives.
+
+
+## 17. Conditional entropy-symmetry theorem (2026-11-23)
+
+A note was added proving: if \(UB_j=B_{\pi(j)}M_j\) for a permutation \(\pi\) of the five basis indices and monomial unitaries \(M_j\), then the outcome probability vectors for \(U\psi\) are coordinate permutations of the original distributions and \(F(U\psi)=F(\psi)\). This is a conditional mathematical proof. Concrete Pauli actions still require exact certificate execution/checking. Orbit invariance does not alone supply a fundamental-domain covering or prove \(F\ge7\).
