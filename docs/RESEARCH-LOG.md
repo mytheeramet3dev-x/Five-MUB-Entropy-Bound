@@ -84,3 +84,14 @@ This is a design proposal only. No global interval proof has been run.
 4. Decide between an analytic global inequality, a sum-of-squares/algebraic certificate, or a rigorous interval proof.
 5. Keep a separate issue list for all unresolved lemmas.
 6. Do not claim completion until an independently checkable global proof exists.
+
+## 2026-11-23 continuation — certificate checker added
+
+**Completed as repository edits (execution not performed):**
+- Added `verify_basis_action_certificate.py`, a second code path that loads the generated JSON, reconstructs each overlap matrix from the exact source matrices, checks target uniqueness, column mapping, row/column monomial structure, exact phases, unit modulus, duplicate/missing records, and expected 80 Pauli/basis pairs.
+- Corrected generator JSON newline serialization.
+- Linked the checker in README and expanded the certificate notes to state the shared-data limitation explicitly.
+
+**Evidence status:** all edits were fetched back from GitHub. Neither generator nor checker was run in this session; therefore no 80-action pass or symmetry result is claimed. Both verifier paths use `mub_data.py`, so this is independent checking of the generated action records, not an independent audit of the underlying MUB data.
+
+**Next:** (1) audit the source matrices and Pauli labels independently; (2) once execution access is available, run generator and checker and archive the JSON/log/software versions; (3) analyze certified basis/column permutations for the entropy function's symmetry reduction; (4) do not use symmetry reduction in a global proof until its exact scope is verified.
