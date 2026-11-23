@@ -342,3 +342,10 @@ Then continue from checklist item 1 or the latest explicit checkpoint. Do not cl
 Added the certificate generator `verify_basis_action.py` and a separate exact checker `verify_basis_action_certificate.py`. The checker reads the generated JSON and reconstructs overlaps \\(B_k^\\dagger U B_j\\) from `mub_data.py`, validates target uniqueness, checks exact nonzero phases against the matrix entries, checks monomial permutation structure and unit modulus, and rejects duplicates or missing Pauli/input-basis records. This is a stronger verifier for the record file than simply trusting the generator output. It still shares the same matrix source, so source-data independence is not achieved.
 
 All source edits were fetched back from GitHub. **Neither script was executed** in the current session, and the JSON certificate does not yet exist as verified output. No symmetry-action theorem is claimed. The next checkpoint is an independent audit of `mub_data.py`, followed by actual generator/checker execution when permitted, preserving generated JSON and logs.
+
+
+## 15. Source-data audit checkpoint (2026-11-23)
+
+Added `audit_mub_source.py` and `docs/SOURCE-DATA-AUDIT.md`. The script checks five basis unitarities, all ten pairwise unbiasedness conditions, the 16 Pauli labels against explicit \\(X^xZ^z\\) tensor-product constructions, exact distinctness modulo global phase, and equality-state normalization/probabilities. README now links these artifacts.
+
+Fetched-back content confirmed. **Not executed:** no audit PASS result or numerical/symbolic execution claim. Next task is to preserve output/software versions when execution becomes available, then audit the Pauli action certificate.
