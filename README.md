@@ -36,6 +36,7 @@ The inequality is to be proved for every unit vector \\(\\psi\\in\\mathbb C^4\\)
 - [Equality-state checks](verify_equality.py)
 - [Pauli state-orbit checks](verify_pauli_orbit.py)
 - [Exact Pauli basis-action certificate generator](verify_basis_action.py)
+- [Independent exact certificate checker](verify_basis_action_certificate.py)
 - [Certificate output format and evidence status](docs/PAULI-MUB-ACTION-CERTIFICATE.md)
 - [Python dependencies](requirements.txt)
 
