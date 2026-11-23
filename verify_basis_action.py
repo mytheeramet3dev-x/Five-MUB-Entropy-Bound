@@ -63,7 +63,7 @@ def main():
         "records": records,
     }
     output = Path("pauli_basis_action_certificate.json")
-    output.write_text(json.dumps(certificate, indent=2) + "\\n", encoding="utf-8")
+    output.write_text(json.dumps(certificate, indent=2) + "\n", encoding="utf-8")
     print(f"RESULT: {len(records)} exact actions certified.")
     print(f"CERTIFICATE FILE: {output}")
 
