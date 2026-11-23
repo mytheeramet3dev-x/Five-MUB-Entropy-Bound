@@ -59,3 +59,11 @@ For every input basis \(j\), provide:
 - exact modulus one for every nonzero entry.
 
 These conditions establish \(R_j=M_j\) and hence (PS).
+
+
+## Finite-group fundamental-domain existence (conditional)
+
+Assume the monomial basis-action condition (PS) has been verified for every element of a finite group \(G\). Then the entropy objective is \(G\)-invariant. A coverage issue can be resolved abstractly, without claiming that a useful explicit coordinate domain has been constructed: choose a canonical representative for each projective ray (normalize to unit norm and fix global phase by making the first nonzero coordinate positive real), map each representative to its six real coordinates in a fixed order, and define \(D\) to consist of representatives lexicographically minimal among their finite \(G\)-orbits. Every orbit is finite and therefore has a lexicographic minimum; consequently every orbit intersects \(D\), and invariance implies minimization over \(D\) is equivalent to minimization over the full projective space.
+
+
+This is an existence/coverage statement, not an explicit manageable parameterization. The resulting set may be awkward or non-closed due to phase-chart conventions and lexicographic comparisons; it provides no entropy lower bound and does not justify a practical reduced search until the concrete group action is certified and the domain is described computationally or analytically.
