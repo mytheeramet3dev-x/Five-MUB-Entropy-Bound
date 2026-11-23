@@ -67,3 +67,10 @@ Assume the monomial basis-action condition (PS) has been verified for every elem
 
 
 This is an existence/coverage statement, not an explicit manageable parameterization. The resulting set may be awkward or non-closed due to phase-chart conventions and lexicographic comparisons; it provides no entropy lower bound and does not justify a practical reduced search until the concrete group action is certified and the domain is described computationally or analytically.
+
+
+## Finite-group fundamental-domain existence (conditional)
+
+Assume the monomial basis-action condition (PS) has been verified for every element of a finite group \(G\). Then the entropy objective is \(G\)-invariant. An abstract coverage domain can be defined without claiming a useful explicit coordinate domain: canonicalize each projective ray (unit norm and fix global phase by making the first nonzero coordinate positive real), map to six real coordinates in a fixed order, and choose the lexicographically minimal tuple among its finite \(G\)-orbit. Every finite orbit has a lexicographic minimum, so every orbit meets this domain and minimization there is equivalent to minimization on projective space.
+
+This is a coverage result only. The set may be awkward or non-closed due to phase conventions and lexicographic comparisons; it is not a practical parameterization yet. It supplies no entropy lower bound and cannot be applied to the concrete Pauli group until the action certificate is verified.
