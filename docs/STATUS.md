@@ -29,6 +29,8 @@ The value 7 and equality examples were reported by Riccardi, Macchiavello, and M
 | Independent verification package | NOT ESTABLISHED | Must be created after proof artifacts exist |
 | Source-data audit script | ARTIFACT WRITTEN; NOT EXECUTED | Strengthened: MUB unitarity, 10 overlaps, Pauli HS orthogonality/trace/unitarity/labels, equality distributions |
 | Pauli basis-action generator and checker | ARTIFACTS WRITTEN; NOT EXECUTED | Generator and independent record checker committed; both share `mub_data.py`; no certificate output yet |
+| Conditional entropy symmetry theorem | PROVED (conditional) | If exact monomial basis action (PS) holds, \(F(U\psi)=F(\psi)\); concrete Pauli application still unverified |
+
 
 ## Priority order
 
